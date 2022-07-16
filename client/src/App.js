@@ -11,11 +11,10 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import { API } from "./app/API";
-import { useState, useEffect } from "react";
+import {  useEffect } from "react";
 import ManagerScreen from "./page/managerScreen/ManagerScreen";
 import Cookies from "universal-cookie";
 import { useDispatch} from "react-redux";
-import { logIn } from "./features/authSlice";
 import { login } from "./actions/user.actions";
 import { loginStateSelector, userSelector } from "./selectors/user.selector";
 const cookie = new Cookies()
